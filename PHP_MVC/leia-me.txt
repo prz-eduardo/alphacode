@@ -1,0 +1,32 @@
+Funcionalidades
+Cadastro de Contatos: Permite adicionar novos contatos com informações como nome completo, data de nascimento, e-mail, profissão, telefone, celular, e opções para indicar se o número do celular possui WhatsApp, se deseja receber notificações por e-mail e por SMS.
+Listagem de Contatos: Apresenta uma tabela com os contatos cadastrados exibindo nome, data de nascimento, e-mail, profissão, celular para contato e opções para editar ou excluir cada contato.
+Edição de Contatos: Permite editar as informações de um contato existente.
+Exclusão de Contatos: Permite excluir um contato existente após confirmação.
+Estrutura do Projeto
+O projeto segue a seguinte estrutura de pastas:
+
+app: Contém os arquivos PHP relacionados à lógica de negócio e acesso aos dados.
+DAO: Classes de acesso a dados.
+Model: Classes de modelo que representam os dados.
+assets: Contém os recursos estáticos como imagens e folhas de estilo.
+scripts: Contém scripts JavaScript.
+styles: Contém folhas de estilo CSS.
+Como Utilizar
+Faça o clone deste repositório.
+Configure um servidor web local (como Apache) e um servidor de banco de dados MySQL.
+Importe o arquivo SQL fornecido (db_mvc.sql) para criar a estrutura do banco de dados.
+Configure as credenciais de acesso ao banco de dados no arquivo config.php.
+Execute o servidor web.
+Acesse a aplicação pelo navegador.
+Tecnologias Utilizadas
+PHP 7.x: Linguagem de programação para o backend seguindo o padrão MVC.
+HTML5/CSS/JavaScript/Bootstrap: Para a construção do frontend e design responsivo.
+jQuery: Biblioteca JavaScript para facilitar a manipulação do DOM e interações com o usuário.
+MySQL 5.x: Banco de dados relacional para armazenamento dos dados.
+Observações
+Certifique-se de ter as extensões necessárias do PHP habilitadas, como PDO para acesso ao banco de dados.
+Para segurança, é importante validar e filtrar os dados de entrada do usuário.
+Esteja ciente de que este projeto é um exemplo educacional e pode necessitar de melhorias e otimizações para ambientes de produção.
+Desenvolvedor
+Este projeto foi desenvolvido por Eduardo dos Prazeres. Para dúvidas ou sugestões, entre em contato através de prz.eduardo92@gmail.com ou visite o meu https://github.com/prz-eduardo.

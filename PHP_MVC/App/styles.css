@@ -1,0 +1,287 @@
+
+
+body {
+    height: 100vh; /* 100% da altura da viewport */
+    margin: 0px;
+    max-width: 720px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+legend {
+    display: flex;
+    padding-inline-start: 25px;
+    background-color: #2d8bcd;
+    color: #fff;
+    text-align: left;
+    margin-left: auto; /* Centralizar horizontalmente */
+    position: absolute;
+    top: 0px;
+    left: 75px;
+    z-index: 1;
+    height: 75px;
+    align-items: center;
+    width: 200%; /* Fundo até a direita da página */
+  }
+
+#logo {
+    display: block;
+    height: 75px;
+  }
+
+  form {
+    background-color: #F8F8F8;
+    border: 0px solid #CCC;
+    padding: 45px;
+    min-width: 445px;
+    max-width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+form::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px; /* Altura da linha */
+    background-color: #ccc; /* Cor da linha cinza */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+#xk1 {
+    height: 15px; /* Define a altura como 4px */
+}
+
+
+th {
+    background-color: #2d8bcd; /* Define a cor de fundo como azul */
+    width: 150%; /* Preenche toda a largura disponível */
+    height: 75%; /* Preenche 75% da altura disponível */
+    color: white; /* Define a cor do texto como branco */
+    line-height: 20px; /* Igual à altura da linha acima */
+    vertical-align: middle;
+    font-size: 0.8em; /* Ajuste o tamanho da fonte conforme necessário */
+    white-space: nowrap; /* Impede a quebra de linha no texto */
+}
+
+
+
+td {
+    font-size: 0.8em; /* Ajuste o tamanho da fonte conforme necessário */
+    white-space: nowrap; /* Impede a quebra de linha no texto */
+    margin: 5px; /* Adiciona margens laterais de 5px */
+    color: #777; /* Define a cor do texto como cinza médio */
+    padding-bottom: 2px;
+    border-bottom: 1px solid #7a7979;
+}
+.checkbox {
+    display: flex;
+    align-items: center; /* Ajustado para alinhar no centro verticalmente */
+    justify-content: space-between;
+    margin-bottom: 5px; 
+}
+
+.checkbox label {
+    color: gray;
+    margin-left: 10px; /* Alterado para margem à esquerda */
+    font-size: 60%;
+    line-height: 16px; /* Ajustado para a mesma altura do checkbox */
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+.checkbox input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #2d8bcd; 
+    background-color: #2d8bcd;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* Estilizando o sinal de check branco */
+input[type="checkbox"]:checked {
+    background-color: #007BFF; /* Mantendo a cor azul quando marcado */
+    border-color: #007BFF; /* Mantendo a cor azul quando marcado */
+}
+
+input[type="checkbox"]:checked::before {
+    content: '\2713'; /* Código do sinal de check (você pode ajustar conforme necessário) */
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    color: #fff; /* Cor branca para o sinal de check */
+}
+
+.form-group {
+    position: relative;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff; /* Borda branca em todas as laterais */
+    border-bottom: 2px solid #585858; /* Cor cinza na borda inferior */
+    background-color: transparent; /* Fundo transparente para remover a caixa de input padrão */
+    font-size: 13px;
+    outline: none; /* Remove a borda de foco ao clicar no campo */
+    transition: border-bottom 0.3s ease; /* Adiciona uma transição para suavizar a mudança de cor */
+    box-sizing: border-box; /* Garante que a largura do elemento inclua a borda e o preenchimento */
+}
+
+/* Estilizar a borda inferior quando o campo estiver focado */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus {
+    border-bottom: 2px solid #2d8bcd; /* Cor azul ao ser selecionado */
+}
+
+.form-group label {
+    font-size: 0.8em; /* Tamanho de fonte menor */
+    color: #777; /* Cor cinza */
+}
+
+
+#form-container {
+    background-color: #F8F8F8;
+    border: 0px solid #CCC;
+    border-left: 400px;
+    padding: 40px;
+    max-width: 100px;
+    max-width: 500px;
+    max-height: 1200px;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: mid;
+  }
+  
+  /* Label styling */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    flex: 1;
+    color: gray
+  }
+  
+  /* Input field styling */
+  input[type="text"],
+  input[type="date"],
+  input[type="email"] {
+    width: 45%;
+    padding: 0px;
+    border: 0px solid #CCC;
+    font-size: 12px;
+    margin-right: 5px;
+    min-width: 200px;
+    max-width: 230px;
+  }
+  
+  /* Checkbox styling */
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #2d8bcd;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* Posicionamento à direita e na parte inferior */
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+  
+  /* Button hover effect */
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  .form-group button {
+    background-color: #2d8bcd;
+    border-color: #2d8bcd;
+    color: #fff;
+    margin-left: auto; /* Centraliza horizontalmente */
+    /*width: auto; Ajusta ao conteúdo */
+float: right;
+    /*display: flex; Alinha com flexbox */
+    /*justify-content: flex-end; Alinha à direita com flexbox */
+  }
+
+  table {
+    background-color: #F8F8F8;
+    border: 0px solid #CCC;
+    margin-top: 15px; /* Move para baixo 25px */
+    margin-left: -70px; /* Adiciona uma margem de 20px à esquerda */
+    min-width: 745px;
+    max-width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.65);
+    transform-origin: center top;
+    position: relative;
+    padding: 100; /* Remove o padding */
+}
+
+table::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px; /* Altura da parte de cima que você deseja preencher com o azul */
+    background-color: #2d8bcd; /* Cor azul */
+    z-index: -1; /* Garante que o pseudo-elemento esteja abaixo do conteúdo da tabela */
+}
+
+
+.content {
+    /* Adicione uma div para envolver o conteúdo principal para evitar sobreposição com o rodapé */
+    padding-bottom: 60px; /* Ajuste conforme necessário para evitar sobreposição com o rodapé */
+}
+
+footer {
+    display: flex;
+    padding-inline-start: 5px;
+    background-color: #2d8bcd;
+    color: #fff;
+    text-align: left;
+    margin-left: auto;
+    position: fixed;
+    bottom: 0;
+    align-items: flex-end; /* Ajustado para alinhar itens no final do contêiner */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    width: 100%;
+    z-index: 1;
+}
+
+footer img {
+    width: 7%;
+    margin-right: 80px; 
+    margin-top: 10px; 
+}
+
+footer span {
+    flex: 1;
+    text-align: left;
+}
+
+#politicas {
+    margin-right: 80px; /* Adicione a margem desejada ao lado do link "Políticas" */
+}
