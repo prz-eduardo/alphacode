@@ -10,8 +10,8 @@ class DAO
     public function __construct()
     {
         try {
-            $dsn = "mysql:host=localhost:3306;dbname=db_mvc";
-            $this->conexao = new PDO($dsn, 'root', '4865');
+            $dsn = "mysql:host=Localhost:3306;dbname=db_mvc";
+            $this->conexao = new PDO($dsn, 'root', 'root');
         } catch (\PDOException $e) {
             echo 'Erro na conexão com o banco de dados: ' . $e->getMessage();
         }
